@@ -1,3 +1,2 @@
-# ToDoApp
-NG2 ToDoApp
- 
+# Angular2 TODO Application
+
