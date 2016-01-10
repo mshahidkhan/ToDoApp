@@ -8,7 +8,7 @@ import {TodoModel} from "./todo-model";
 	template: `<div style="margin: 50px;">
 		<form (submit)="onSubmit()">
 			<input type='text' [(ngModel)]="todoModel.title">
-			<button type="submit" >Save</button>
+			<button class="btn btn-default" type="submit" >Save</button>
 		</form>
 	</div>`
 })

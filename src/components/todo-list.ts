@@ -6,7 +6,8 @@ import {TodoService} from "../services/todo-service";
 	template: `<div>
 		<ul>
 			<li *ngFor = "#todo of todoService.todos">
-				{{todo.title}}
+				<span [hidden]="todo.status == 'completed' " > {{todo.title}}</span>
+				<button class="btn btn-default" (click)="todo.toggle()">Toggle</button>
 			</li>
 		</ul>
 	</div>`
