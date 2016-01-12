@@ -19,9 +19,17 @@ export class TodoInput{
 
 	}
 	onSubmit(){
-		this.todoService.todos.push(this.todoModel);
+		/**  NG-2 suggests and encourages IMMUTABILITY. We should not use PUSH elements in the same ARRAY.
+		// Instead, use new object every time a and use a separate method to Add elements in an Array.
+		**/
+		// this.todoService.todos.push(this.todoModel);
+
+
+		this.todoService.addTodo(this.todoModel);
 		console.log(this.todoService.todos);
 		this.todoModel = new TodoModel();
+
+
 		/*if (this.todoModel.title !== ""){
 			this.todoService.todos.push(this.todoModel);
 			console.log(this.todoService.todos);
