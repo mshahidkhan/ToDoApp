@@ -4,10 +4,29 @@
     <meta charset="UTF-8">
     <title>ng2 TODO App</title>
     <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <style type="text/css">
+        .completed{
+            background-color: lightblue;
+        }
+
+        .started{
+            background-color: lightgreen;
+        }
+    </style>
 </head>
 
 <body>
-<app></app>
+    <div class="nav navbar"></div>
+    <div class="completed">Completed</div>
+    <div class="started">Started</div>
+
+    <div class="container">
+        <div class="row">
+            <app></app>
+        </div>
+    </div>
+
 
 </body>
 
